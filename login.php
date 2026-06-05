@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    $query = "SELECT * FROM Users WHERE email = '$email' AND password = '$password'";
+    $query = "SELECT * FROM Users WHERE email = '$email' AND password = "YOUR_OWN_API_KEY"";
     $result = $conn->query($query);
 
     if ($result->num_rows == 1) {
